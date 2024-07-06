@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(66, 65, 66);
+    overflow-y: hidden;
+}
+
+.cronometro__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.timer__cronometro{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.timer__cronometro p, span {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.timer__cronometro span {
+    margin: 0 .5rem;
+}
+
+.funcoes__cronometro{
+    display: flex;
+    justify-content: center;
+}
+
+.funcoes__cronometro button {
+    cursor: pointer;
+    margin: 0 1rem;
+    width: 64px;
+    height: 64px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ativo{
+    transition: .3s ease-in-out;
+    color: white;
+    background-color: red;
+}
+
+.historico__container{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 75vh;
+    background-color: rgb(172, 170, 170);
+}
+
+.historico__icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.historico__icons >p, span i{
+    font-size: 1.5rem; 
+    padding: .875rem;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: red;
+    color: white; 
+    border-radius: 50%;
+}
+
+.historico__icons p{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    font-size: 2rem;
+}
+
+.historico__content{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    font-size: 1.5rem;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 720px) {  
+    .historico__container{
+        position: absolute;
+        top: 50;
+        left: 50;
+        width: 75vw;
+        height: 75vh;
+    }
+
+
+}

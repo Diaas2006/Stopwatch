@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="cronometro__container">
+        <div class="historico__tab"></div>
+        <main>
+            <div class="timer__cronometro">
+                <h1 id="hours">00</h1>
+                <span>:</span>
+                <h1 id="minutes">00</h1>
+                <span>:</span>
+                <h1 id="seconds">00</h1>
+                <span>.</span>
+                <p id="milliseconds">00</p>
+            </div>
+            <div class="funcoes__cronometro">
+                <button id="play">Play</button>
+                <button id="pause" style=" background-color: rgb(255, 123, 0);">Pause</button>
+            </div>
+        </main>
+        <div class="historico__container">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <div class="historico__icons">
+                <span><i class="fa fa-trash"></i></span>
+                <p>x</p>
+            </div>
+            <div class="historico__content"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

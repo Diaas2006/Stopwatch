@@ -1,0 +1,1 @@
+A simple timer, made with HTML, CSS and JS
